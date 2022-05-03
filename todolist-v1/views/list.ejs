@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <% if (kinfOfDay === "Sunday" || kinfOfDay === "Saturday"){ %>
+  <h1 style="color:red"><%= kinfOfDay %> ToDo List</h1>
+  <% }else{ %>
+  <h1 style="color:blue"><%= kinfOfDay %> ToDo List</h1>
+  <% } %>
+
+
+  <ul>
+    
+    <%  for (var i=0; i<newListItems.length; i++){ %>
+
+    </newListItems.length,>
+    <li>
+      <%= newListItems[i] %>
+    </li>
+    <%  } %>
+
+
+  </ul>
+
+  <form class="" action="/" method="post">
+    <input type="text" name="newItem">
+    <button type="submit" name="button">Add</button>
+  </form>
+</body>
+
+</html>
